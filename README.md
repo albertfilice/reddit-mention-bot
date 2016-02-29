@@ -3,7 +3,7 @@
 ## General
 This is a skeleton for a Reddit bot.
 The bot will look at the mentions for a user, and then can reply to those mentions, or do whatever you like.
-Reading mentions requires authorization by the user, so you'll have to go through a oauth process to get some secret information relating to your user.
+Reading mentions requires authorization by the user, so you'll have to go through a Oauth2 process to get some secret information relating to your user.
 
 #### Quick Instructions
 1. Make sure you have Python 3
@@ -13,7 +13,7 @@ Reading mentions requires authorization by the user, so you'll have to go throug
 5. Create a `secrets.py` file
 6. Add the fowling variables to the secrets.py file `app_key`, `app_secret`, `access_token`, `refresh_token`
 7. Assign to those variables the values you get in the next step
-8. Instructions for getting your oauth secrets: [Reddit Tutorial](https://www.reddit.com/r/redditdev/comments/3lotxj/tutorial_how_to_migrate_your_existing_bots_from/)
+8. Instructions for getting your Oauth2 secrets: [Reddit Tutorial](https://www.reddit.com/r/redditdev/comments/3lotxj/tutorial_how_to_migrate_your_existing_bots_from/) (use the following scopes `scopes=['edit', 'privatemessages', 'history', 'save', 'identity', 'submit', 'read']` when necessary in the tutorial)
 9. Run the script: `python analyzeHistory.py`
 
 
